@@ -1,0 +1,12 @@
+#import <Availability.h>
+
+#ifdef __OBJC__
+#import <Foundation/Foundation.h>
+#import "cocos2d.h"
+#import "cocos2d-ui.h"
+#import <mgwuSDK/MGWU.h>
+#endif
+
+#ifndef DEBUG
+#define NSLog(...);
+#endif
