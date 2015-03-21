@@ -20,7 +20,12 @@
     CCSprite *coinIcon;
     CCSprite *singletapHand;
     CCSprite *normalHand;
+    CCSprite *background;
+    CCSprite *sun;
+    CCSprite *moon;
     CCNodeColor *obstacleLine;
+    CCNodeColor *darknessColorNode;
+    CCNodeGradient *sunsetGradient;
     CCPhysicsNode *physicsNode;
     CCLabelTTF *timerLabel;
     CCLabelTTF *coinLabel;
@@ -193,6 +198,17 @@
         [audio stopEverything];
     }
     [ABGameKitHelper sharedHelper];
+    [darknessColorNode stopAllActions];
+    [background stopAllActions];
+    [sunsetGradient stopAllActions];
+    [sun stopAllActions];
+    [moon stopAllActions];
+    [darknessColorNode runAction:[CCActionFadeTo actionWithDuration:0 opacity:0]];//Starts with 0.0
+    [background runAction:[CCActionFadeTo actionWithDuration:0 opacity:1]];//Starts with 1.0
+    [sunsetGradient runAction:[CCActionFadeTo actionWithDuration:0 opacity:0]];//Starts with 0.0
+    [sun runAction:[CCActionMoveTo actionWithDuration:0 position:ccp(.119,0.945)]];//Starts with
+    id goDown = [CCActionMoveTo actionWithDuration:0 position:ccp(0.119,-0.10)];
+    [moon runAction:[CCActionSequence actions:goDown, nil]];
 }
 
 -(void)pulseTapToStart{
@@ -290,6 +306,19 @@
 
 -(void)startGame{
     if (!timing) {
+        [darknessColorNode stopAllActions];
+        [background stopAllActions];
+        [sunsetGradient stopAllActions];
+        [sun stopAllActions];
+        [moon stopAllActions];
+        [darknessColorNode runAction:[CCActionFadeTo actionWithDuration:120 opacity:0.3]];//Starts with 0.0
+        [background runAction:[CCActionFadeTo actionWithDuration:120 opacity:0.5]];//Starts with 1.0
+        [sunsetGradient runAction:[CCActionFadeTo actionWithDuration:120 opacity:0.5]];//Starts with 0.0
+        [sun runAction:[CCActionMoveTo actionWithDuration:80 position:ccp(.119,-0.10)]];//Starts with
+        id wait = [CCActionDelay actionWithDuration:80];
+        id goUp = [CCActionMoveTo actionWithDuration:40 position:ccp(0.119,0.80)];
+        [moon runAction:[CCActionSequence actions:wait,goUp, nil]];
+        //  x: 11.9 y: 94.2
         self.userInteractionEnabled = true;
         timing = true;
         gameStartTime = overallTimer;
@@ -338,6 +367,17 @@
 }
 
 -(void)endGame{
+    [darknessColorNode stopAllActions];
+    [background stopAllActions];
+    [sunsetGradient stopAllActions];
+    [sun stopAllActions];
+    [moon stopAllActions];
+    [darknessColorNode runAction:[CCActionFadeTo actionWithDuration:.5 opacity:0]];//Starts with 0.0
+    [background runAction:[CCActionFadeTo actionWithDuration:.5 opacity:1]];//Starts with 1.0
+    [sunsetGradient runAction:[CCActionFadeTo actionWithDuration:.5 opacity:0]];//Starts with 0.0
+    [sun runAction:[CCActionMoveTo actionWithDuration:.5 position:ccp(.119,0.945)]];//Starts with
+    id goDown = [CCActionMoveTo actionWithDuration:.5 position:ccp(0.119,-0.10)];
+    [moon runAction:[CCActionSequence actions:goDown, nil]];
     leaderboardButton.visible = true;
     optionButton.enabled = false;
     optionButton.visible = false;
