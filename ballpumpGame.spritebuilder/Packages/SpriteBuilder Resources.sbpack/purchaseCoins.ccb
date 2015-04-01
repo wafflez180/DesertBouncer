@@ -623,8 +623,6 @@
 								</array>
 							</dict>
 						</array>
-						<key>selected</key>
-						<true/>
 					</dict>
 					<dict>
 						<key>UUID</key>
@@ -5167,7 +5165,7 @@
 						<key>value</key>
 						<array>
 							<string></string>
-							<string>scrollPage.png</string>
+							<string>assets/scrollPage.png</string>
 						</array>
 					</dict>
 					<dict>
@@ -5203,6 +5201,8 @@
 						<array/>
 					</dict>
 				</array>
+				<key>selected</key>
+				<true/>
 			</dict>
 			<dict>
 				<key>UUID</key>
@@ -5275,7 +5275,7 @@
 						<key>value</key>
 						<array>
 							<string></string>
-							<string>scrollBottomRoll.png</string>
+							<string>assets/scrollBottomRoll.png</string>
 						</array>
 					</dict>
 					<dict>
@@ -5383,7 +5383,7 @@
 						<key>value</key>
 						<array>
 							<string></string>
-							<string>scrollTopRoll.png</string>
+							<string>assets/scrollTopRoll.png</string>
 						</array>
 					</dict>
 					<dict>

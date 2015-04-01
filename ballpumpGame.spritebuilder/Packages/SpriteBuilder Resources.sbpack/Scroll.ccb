@@ -325,7 +325,7 @@
 								<string>FloatScale</string>
 								<key>value</key>
 								<array>
-									<real>25</real>
+									<real>20</real>
 									<integer>0</integer>
 								</array>
 							</dict>
@@ -2489,7 +2489,7 @@
 						<key>value</key>
 						<array>
 							<string></string>
-							<string>scrollPage.png</string>
+							<string>assets/scrollPage.png</string>
 						</array>
 					</dict>
 					<dict>
@@ -2703,7 +2703,7 @@
 						<key>value</key>
 						<array>
 							<string></string>
-							<string>scrollTopRoll.png</string>
+							<string>assets/scrollTopRoll.png</string>
 						</array>
 					</dict>
 					<dict>
@@ -2917,7 +2917,7 @@
 						<key>value</key>
 						<array>
 							<string></string>
-							<string>scrollBottomRoll.png</string>
+							<string>assets/scrollBottomRoll.png</string>
 						</array>
 					</dict>
 					<dict>

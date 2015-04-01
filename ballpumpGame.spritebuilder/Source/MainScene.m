@@ -32,6 +32,8 @@
     CCLabelTTF *tapToStartLabel;
     CCLabelTTF *titleLabel;
     CCLabelTTF *tutorialReadyLabel;
+    CCLabelTTF *optionLabelButton;
+    CCLabelTTF *leaderboardLabelButton;
     thePump *pumpBottom;
     thePump *pumpTop;
     bool ballOnBottomPump;
@@ -140,6 +142,7 @@
     singletapHand.visible = false;
     normalHand.visible = false;
     leaderboardButton.visible = false;
+    leaderboardLabelButton.visible = false;
     changingEyeColor = true;
     tutorialReadyLabel.visible = false;
     speed = 1.5;
@@ -379,8 +382,10 @@
     id goDown = [CCActionMoveTo actionWithDuration:.5 position:ccp(0.119,-0.10)];
     [moon runAction:[CCActionSequence actions:goDown, nil]];
     leaderboardButton.visible = true;
+    leaderboardLabelButton.visible = true;
     optionButton.enabled = false;
     optionButton.visible = false;
+    optionLabelButton.visible = false;
     coinValue = 1;
     speed = 1.5;
     oldSpeed = 0;
@@ -557,42 +562,14 @@
         }else if (gameOverallTime < 40){
             speed = 0.7;
             spawnBarRate = 0.001;
-            if (coinValueUpgradedSlots >= 1) {
+            if (coinValueUpgradedSlots >= 2) {
                 coinValue = 10;
             }
             [self setNewStage];
         }else if (gameOverallTime < 60){
             speed = 0.5;
             spawnBarRate = 0.001;
-            if (coinValueUpgradedSlots >= 1) {
-                coinValue = 10;
-            }
-            [self setNewStage];
-        }else if (gameOverallTime < 80){
-            speed = 0.4;
-            spawnBarRate = 0.0005;
-            if (coinValueUpgradedSlots >= 1) {
-                coinValue = 10;
-            }
-            [self setNewStage];
-        }else if (gameOverallTime < 90){
-            speed = 0.3;
-            spawnBarRate = 0.0005;
-            if (coinValueUpgradedSlots >= 1) {
-                coinValue = 10;
-            }
-            [self setNewStage];
-        }else if (gameOverallTime < 100){
-            speed = 0.2;
-            spawnBarRate = 0.0005;
-            if (coinValueUpgradedSlots >= 1) {
-                coinValue = 10;
-            }
-            [self setNewStage];
-        }else if (gameOverallTime < 150){
-            speed = 0.1;
-            spawnBarRate = 0.0005;
-            if (coinValueUpgradedSlots >= 1) {
+            if (coinValueUpgradedSlots >= 2) {
                 coinValue = 10;
             }
             [self setNewStage];
@@ -674,7 +651,7 @@
                         CCEffectHue *coinColor;
                         CCEffectBloom *coinBloom;
                         
-                        int randomChanceForGreenCoin = arc4random_uniform(15);
+                        int randomChanceForGreenCoin = arc4random_uniform(25);
                         
                         if (randomChanceForGreenCoin == 2 && coinValueUpgradedSlots > 2) {
                             

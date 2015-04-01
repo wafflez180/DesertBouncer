@@ -322,7 +322,7 @@
 										<key>value</key>
 										<array>
 											<string></string>
-											<string>Health@4x.png</string>
+											<string>assets/Health@4x.png</string>
 										</array>
 									</dict>
 									<dict>
@@ -871,7 +871,7 @@
 														<key>value</key>
 														<array>
 															<string></string>
-															<string>coins-10@4x.png</string>
+															<string>assets/coins-10@4x.png</string>
 														</array>
 													</dict>
 													<dict>
@@ -973,7 +973,7 @@
 												<key>value</key>
 												<array>
 													<string></string>
-													<string>coins-17@4x.png</string>
+													<string>assets/coins-17@4x.png</string>
 												</array>
 											</dict>
 											<dict>
@@ -1088,7 +1088,7 @@
 														<key>value</key>
 														<array>
 															<string></string>
-															<string>coins-10@4x.png</string>
+															<string>assets/coins-10@4x.png</string>
 														</array>
 													</dict>
 													<dict>
@@ -1190,7 +1190,7 @@
 												<key>value</key>
 												<array>
 													<string></string>
-													<string>coins-17@4x.png</string>
+													<string>assets/coins-17@4x.png</string>
 												</array>
 											</dict>
 											<dict>
@@ -1305,7 +1305,7 @@
 														<key>value</key>
 														<array>
 															<string></string>
-															<string>coins-10@4x.png</string>
+															<string>assets/coins-10@4x.png</string>
 														</array>
 													</dict>
 													<dict>
@@ -1407,7 +1407,7 @@
 												<key>value</key>
 												<array>
 													<string></string>
-													<string>coins-17@4x.png</string>
+													<string>assets/coins-17@4x.png</string>
 												</array>
 											</dict>
 											<dict>
@@ -1522,7 +1522,7 @@
 														<key>value</key>
 														<array>
 															<string></string>
-															<string>coins-10@4x.png</string>
+															<string>assets/coins-10@4x.png</string>
 														</array>
 													</dict>
 													<dict>
@@ -1624,7 +1624,7 @@
 												<key>value</key>
 												<array>
 													<string></string>
-													<string>coins-17@4x.png</string>
+													<string>assets/coins-17@4x.png</string>
 												</array>
 											</dict>
 											<dict>
@@ -1739,7 +1739,7 @@
 														<key>value</key>
 														<array>
 															<string></string>
-															<string>coins-10@4x.png</string>
+															<string>assets/coins-10@4x.png</string>
 														</array>
 													</dict>
 													<dict>
@@ -1841,7 +1841,7 @@
 												<key>value</key>
 												<array>
 													<string></string>
-													<string>coins-17@4x.png</string>
+													<string>assets/coins-17@4x.png</string>
 												</array>
 											</dict>
 											<dict>
@@ -2903,7 +2903,7 @@
 										<key>value</key>
 										<array>
 											<string></string>
-											<string>time.png</string>
+											<string>assets/time.png</string>
 										</array>
 									</dict>
 									<dict>
@@ -3452,7 +3452,7 @@
 														<key>value</key>
 														<array>
 															<string></string>
-															<string>coins-10@4x.png</string>
+															<string>assets/coins-10@4x.png</string>
 														</array>
 													</dict>
 													<dict>
@@ -3554,7 +3554,7 @@
 												<key>value</key>
 												<array>
 													<string></string>
-													<string>coins-17@4x.png</string>
+													<string>assets/coins-17@4x.png</string>
 												</array>
 											</dict>
 											<dict>
@@ -3669,7 +3669,7 @@
 														<key>value</key>
 														<array>
 															<string></string>
-															<string>coins-10@4x.png</string>
+															<string>assets/coins-10@4x.png</string>
 														</array>
 													</dict>
 													<dict>
@@ -3771,7 +3771,7 @@
 												<key>value</key>
 												<array>
 													<string></string>
-													<string>coins-17@4x.png</string>
+													<string>assets/coins-17@4x.png</string>
 												</array>
 											</dict>
 											<dict>
@@ -3886,7 +3886,7 @@
 														<key>value</key>
 														<array>
 															<string></string>
-															<string>coins-10@4x.png</string>
+															<string>assets/coins-10@4x.png</string>
 														</array>
 													</dict>
 													<dict>
@@ -3988,7 +3988,7 @@
 												<key>value</key>
 												<array>
 													<string></string>
-													<string>coins-17@4x.png</string>
+													<string>assets/coins-17@4x.png</string>
 												</array>
 											</dict>
 											<dict>
@@ -4103,7 +4103,7 @@
 														<key>value</key>
 														<array>
 															<string></string>
-															<string>coins-10@4x.png</string>
+															<string>assets/coins-10@4x.png</string>
 														</array>
 													</dict>
 													<dict>
@@ -4205,7 +4205,7 @@
 												<key>value</key>
 												<array>
 													<string></string>
-													<string>coins-17@4x.png</string>
+													<string>assets/coins-17@4x.png</string>
 												</array>
 											</dict>
 											<dict>
@@ -4320,7 +4320,7 @@
 														<key>value</key>
 														<array>
 															<string></string>
-															<string>coins-10@4x.png</string>
+															<string>assets/coins-10@4x.png</string>
 														</array>
 													</dict>
 													<dict>
@@ -4422,7 +4422,7 @@
 												<key>value</key>
 												<array>
 													<string></string>
-													<string>coins-17@4x.png</string>
+													<string>assets/coins-17@4x.png</string>
 												</array>
 											</dict>
 											<dict>
@@ -5484,7 +5484,7 @@
 										<key>value</key>
 										<array>
 											<string></string>
-											<string>Lightning@4x.png</string>
+											<string>assets/Lightning@4x.png</string>
 										</array>
 									</dict>
 									<dict>
@@ -6034,7 +6034,7 @@ by 0.2 seconds</string>
 														<key>value</key>
 														<array>
 															<string></string>
-															<string>coins-10@4x.png</string>
+															<string>assets/coins-10@4x.png</string>
 														</array>
 													</dict>
 													<dict>
@@ -6136,7 +6136,7 @@ by 0.2 seconds</string>
 												<key>value</key>
 												<array>
 													<string></string>
-													<string>coins-17@4x.png</string>
+													<string>assets/coins-17@4x.png</string>
 												</array>
 											</dict>
 											<dict>
@@ -6251,7 +6251,7 @@ by 0.2 seconds</string>
 														<key>value</key>
 														<array>
 															<string></string>
-															<string>coins-10@4x.png</string>
+															<string>assets/coins-10@4x.png</string>
 														</array>
 													</dict>
 													<dict>
@@ -6353,7 +6353,7 @@ by 0.2 seconds</string>
 												<key>value</key>
 												<array>
 													<string></string>
-													<string>coins-17@4x.png</string>
+													<string>assets/coins-17@4x.png</string>
 												</array>
 											</dict>
 											<dict>
@@ -6468,7 +6468,7 @@ by 0.2 seconds</string>
 														<key>value</key>
 														<array>
 															<string></string>
-															<string>coins-10@4x.png</string>
+															<string>assets/coins-10@4x.png</string>
 														</array>
 													</dict>
 													<dict>
@@ -6570,7 +6570,7 @@ by 0.2 seconds</string>
 												<key>value</key>
 												<array>
 													<string></string>
-													<string>coins-17@4x.png</string>
+													<string>assets/coins-17@4x.png</string>
 												</array>
 											</dict>
 											<dict>
@@ -6685,7 +6685,7 @@ by 0.2 seconds</string>
 														<key>value</key>
 														<array>
 															<string></string>
-															<string>coins-10@4x.png</string>
+															<string>assets/coins-10@4x.png</string>
 														</array>
 													</dict>
 													<dict>
@@ -6787,7 +6787,7 @@ by 0.2 seconds</string>
 												<key>value</key>
 												<array>
 													<string></string>
-													<string>coins-17@4x.png</string>
+													<string>assets/coins-17@4x.png</string>
 												</array>
 											</dict>
 											<dict>
@@ -6902,7 +6902,7 @@ by 0.2 seconds</string>
 														<key>value</key>
 														<array>
 															<string></string>
-															<string>coins-10@4x.png</string>
+															<string>assets/coins-10@4x.png</string>
 														</array>
 													</dict>
 													<dict>
@@ -7004,7 +7004,7 @@ by 0.2 seconds</string>
 												<key>value</key>
 												<array>
 													<string></string>
-													<string>coins-17@4x.png</string>
+													<string>assets/coins-17@4x.png</string>
 												</array>
 											</dict>
 											<dict>
@@ -8066,7 +8066,7 @@ by 0.2 seconds</string>
 										<key>value</key>
 										<array>
 											<string></string>
-											<string>coinface.png</string>
+											<string>assets/coinface.png</string>
 										</array>
 									</dict>
 									<dict>
@@ -8616,7 +8616,7 @@ WORTH 5 GOLD COINS</string>
 														<key>value</key>
 														<array>
 															<string></string>
-															<string>coins-10@4x.png</string>
+															<string>assets/coins-10@4x.png</string>
 														</array>
 													</dict>
 													<dict>
@@ -8718,7 +8718,7 @@ WORTH 5 GOLD COINS</string>
 												<key>value</key>
 												<array>
 													<string></string>
-													<string>coins-17@4x.png</string>
+													<string>assets/coins-17@4x.png</string>
 												</array>
 											</dict>
 											<dict>
@@ -8833,7 +8833,7 @@ WORTH 5 GOLD COINS</string>
 														<key>value</key>
 														<array>
 															<string></string>
-															<string>coins-10@4x.png</string>
+															<string>assets/coins-10@4x.png</string>
 														</array>
 													</dict>
 													<dict>
@@ -8935,7 +8935,7 @@ WORTH 5 GOLD COINS</string>
 												<key>value</key>
 												<array>
 													<string></string>
-													<string>coins-17@4x.png</string>
+													<string>assets/coins-17@4x.png</string>
 												</array>
 											</dict>
 											<dict>
@@ -9050,7 +9050,7 @@ WORTH 5 GOLD COINS</string>
 														<key>value</key>
 														<array>
 															<string></string>
-															<string>coins-10@4x.png</string>
+															<string>assets/coins-10@4x.png</string>
 														</array>
 													</dict>
 													<dict>
@@ -9152,7 +9152,7 @@ WORTH 5 GOLD COINS</string>
 												<key>value</key>
 												<array>
 													<string></string>
-													<string>coins-17@4x.png</string>
+													<string>assets/coins-17@4x.png</string>
 												</array>
 											</dict>
 											<dict>
@@ -9267,7 +9267,7 @@ WORTH 5 GOLD COINS</string>
 														<key>value</key>
 														<array>
 															<string></string>
-															<string>coins-10@4x.png</string>
+															<string>assets/coins-10@4x.png</string>
 														</array>
 													</dict>
 													<dict>
@@ -9369,7 +9369,7 @@ WORTH 5 GOLD COINS</string>
 												<key>value</key>
 												<array>
 													<string></string>
-													<string>coins-17@4x.png</string>
+													<string>assets/coins-17@4x.png</string>
 												</array>
 											</dict>
 											<dict>
@@ -9484,7 +9484,7 @@ WORTH 5 GOLD COINS</string>
 														<key>value</key>
 														<array>
 															<string></string>
-															<string>coins-10@4x.png</string>
+															<string>assets/coins-10@4x.png</string>
 														</array>
 													</dict>
 													<dict>
@@ -9586,7 +9586,7 @@ WORTH 5 GOLD COINS</string>
 												<key>value</key>
 												<array>
 													<string></string>
-													<string>coins-17@4x.png</string>
+													<string>assets/coins-17@4x.png</string>
 												</array>
 											</dict>
 											<dict>
@@ -11965,7 +11965,7 @@ WORTH 5 GOLD COINS</string>
 										<key>value</key>
 										<array>
 											<string></string>
-											<string>storebutton.png</string>
+											<string>assets/storebutton.png</string>
 										</array>
 									</dict>
 									<dict>

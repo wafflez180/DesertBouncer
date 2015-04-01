@@ -147,114 +147,6 @@
 					</dict>
 					<dict>
 						<key>UUID</key>
-						<integer>3</integer>
-						<key>baseClass</key>
-						<string>CCSprite</string>
-						<key>children</key>
-						<array/>
-						<key>customClass</key>
-						<string></string>
-						<key>displayName</key>
-						<string>background</string>
-						<key>memberVarAssignmentName</key>
-						<string></string>
-						<key>memberVarAssignmentType</key>
-						<integer>1</integer>
-						<key>properties</key>
-						<array>
-							<dict>
-								<key>name</key>
-								<string>name</string>
-								<key>type</key>
-								<string>StringSimple</string>
-								<key>value</key>
-								<string></string>
-							</dict>
-							<dict>
-								<key>name</key>
-								<string>position</string>
-								<key>type</key>
-								<string>Position</string>
-								<key>value</key>
-								<array>
-									<real>0.5</real>
-									<real>0.5</real>
-									<integer>0</integer>
-									<integer>2</integer>
-									<integer>2</integer>
-								</array>
-							</dict>
-							<dict>
-								<key>name</key>
-								<string>anchorPoint</string>
-								<key>type</key>
-								<string>Point</string>
-								<key>value</key>
-								<array>
-									<real>0.5</real>
-									<real>0.5</real>
-								</array>
-							</dict>
-							<dict>
-								<key>name</key>
-								<string>scale</string>
-								<key>type</key>
-								<string>ScaleLock</string>
-								<key>value</key>
-								<array>
-									<real>1.1000000238418579</real>
-									<real>1.1000000238418579</real>
-									<true/>
-									<integer>0</integer>
-								</array>
-							</dict>
-							<dict>
-								<key>name</key>
-								<string>spriteFrame</string>
-								<key>type</key>
-								<string>SpriteFrame</string>
-								<key>value</key>
-								<array>
-									<string></string>
-									<string>background.png</string>
-								</array>
-							</dict>
-							<dict>
-								<key>name</key>
-								<string>normalMapSpriteFrame</string>
-								<key>type</key>
-								<string>SpriteFrame</string>
-								<key>value</key>
-								<array>
-									<string></string>
-									<string></string>
-								</array>
-							</dict>
-							<dict>
-								<key>name</key>
-								<string>color</string>
-								<key>type</key>
-								<string>Color3</string>
-								<key>value</key>
-								<array>
-									<real>1</real>
-									<real>1</real>
-									<real>1</real>
-									<real>1</real>
-								</array>
-							</dict>
-							<dict>
-								<key>name</key>
-								<string>effects</string>
-								<key>type</key>
-								<string>EffectControl</string>
-								<key>value</key>
-								<array/>
-							</dict>
-						</array>
-					</dict>
-					<dict>
-						<key>UUID</key>
 						<integer>4</integer>
 						<key>baseClass</key>
 						<string>CCSprite</string>
@@ -360,8 +252,6 @@
 								<array/>
 							</dict>
 						</array>
-						<key>selected</key>
-						<true/>
 					</dict>
 					<dict>
 						<key>UUID</key>
@@ -814,7 +704,7 @@
 								<key>value</key>
 								<array>
 									<string></string>
-									<string>hackeroutbreak.png</string>
+									<string>assets/hackeroutbreak.png</string>
 								</array>
 							</dict>
 							<dict>
@@ -825,7 +715,7 @@
 								<key>value</key>
 								<array>
 									<string></string>
-									<string>hackeroutbreak.png</string>
+									<string>assets/hackeroutbreak.png</string>
 								</array>
 							</dict>
 							<dict>
@@ -849,7 +739,7 @@
 								<key>value</key>
 								<array>
 									<string></string>
-									<string>hackeroutbreak.png</string>
+									<string>assets/hackeroutbreak.png</string>
 								</array>
 							</dict>
 							<dict>
@@ -868,7 +758,7 @@
 								<key>value</key>
 								<array>
 									<string></string>
-									<string>hackeroutbreak.png</string>
+									<string>assets/hackeroutbreak.png</string>
 								</array>
 							</dict>
 							<dict>
@@ -1140,7 +1030,7 @@
 								<key>value</key>
 								<array>
 									<string></string>
-									<string>orbivore.png</string>
+									<string>assets/orbivore.png</string>
 								</array>
 							</dict>
 							<dict>
@@ -1151,7 +1041,7 @@
 								<key>value</key>
 								<array>
 									<string></string>
-									<string>orbivore.png</string>
+									<string>assets/orbivore.png</string>
 								</array>
 							</dict>
 							<dict>
@@ -1175,7 +1065,7 @@
 								<key>value</key>
 								<array>
 									<string></string>
-									<string>orbivore.png</string>
+									<string>assets/orbivore.png</string>
 								</array>
 							</dict>
 							<dict>
@@ -1194,7 +1084,7 @@
 								<key>value</key>
 								<array>
 									<string></string>
-									<string>orbivore.png</string>
+									<string>assets/orbivore.png</string>
 								</array>
 							</dict>
 							<dict>
@@ -1572,7 +1462,7 @@
 								<key>value</key>
 								<array>
 									<string></string>
-									<string>optionsbutton.png</string>
+									<string>assets/optionsbutton.png</string>
 								</array>
 							</dict>
 							<dict>
@@ -1583,7 +1473,7 @@
 								<key>value</key>
 								<array>
 									<string></string>
-									<string>optionsbutton.png</string>
+									<string>assets/optionsbutton.png</string>
 								</array>
 							</dict>
 							<dict>
@@ -1607,7 +1497,7 @@
 								<key>value</key>
 								<array>
 									<string></string>
-									<string>optionsbutton.png</string>
+									<string>assets/optionsbutton.png</string>
 								</array>
 							</dict>
 							<dict>
@@ -1626,7 +1516,7 @@
 								<key>value</key>
 								<array>
 									<string></string>
-									<string>optionsbutton.png</string>
+									<string>assets/optionsbutton.png</string>
 								</array>
 							</dict>
 							<dict>
@@ -2667,7 +2557,7 @@ Arthur Araujo
 								<key>value</key>
 								<array>
 									<string></string>
-									<string>soundon.png</string>
+									<string>assets/soundon.png</string>
 								</array>
 							</dict>
 							<dict>
@@ -2678,7 +2568,7 @@ Arthur Araujo
 								<key>value</key>
 								<array>
 									<string></string>
-									<string>soundon.png</string>
+									<string>assets/soundon.png</string>
 								</array>
 							</dict>
 							<dict>
@@ -2702,7 +2592,7 @@ Arthur Araujo
 								<key>value</key>
 								<array>
 									<string></string>
-									<string>soundon.png</string>
+									<string>assets/soundon.png</string>
 								</array>
 							</dict>
 							<dict>
@@ -2721,7 +2611,7 @@ Arthur Araujo
 								<key>value</key>
 								<array>
 									<string></string>
-									<string>soundon.png</string>
+									<string>assets/soundon.png</string>
 								</array>
 							</dict>
 							<dict>
@@ -3099,7 +2989,7 @@ Arthur Araujo
 								<key>value</key>
 								<array>
 									<string></string>
-									<string>tutorialbutton.png</string>
+									<string>assets/tutorialbutton.png</string>
 								</array>
 							</dict>
 							<dict>
@@ -3110,7 +3000,7 @@ Arthur Araujo
 								<key>value</key>
 								<array>
 									<string></string>
-									<string>tutorialbutton.png</string>
+									<string>assets/tutorialbutton.png</string>
 								</array>
 							</dict>
 							<dict>
@@ -3134,7 +3024,7 @@ Arthur Araujo
 								<key>value</key>
 								<array>
 									<string></string>
-									<string>tutorialbutton.png</string>
+									<string>assets/tutorialbutton.png</string>
 								</array>
 							</dict>
 							<dict>
@@ -3153,7 +3043,7 @@ Arthur Araujo
 								<key>value</key>
 								<array>
 									<string></string>
-									<string>tutorialbutton.png</string>
+									<string>assets/tutorialbutton.png</string>
 								</array>
 							</dict>
 							<dict>
@@ -3369,7 +3259,7 @@ Arthur Araujo
 								<key>value</key>
 								<array>
 									<string></string>
-									<string>soundoff.png</string>
+									<string>assets/soundoff.png</string>
 								</array>
 							</dict>
 							<dict>
@@ -3477,7 +3367,7 @@ Arthur Araujo
 								<key>value</key>
 								<array>
 									<string></string>
-									<string>soundon.png</string>
+									<string>assets/soundon.png</string>
 								</array>
 							</dict>
 							<dict>

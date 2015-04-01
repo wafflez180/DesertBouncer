@@ -253,7 +253,7 @@
 						<key>value</key>
 						<array>
 							<string></string>
-							<string>mossyleaf.png</string>
+							<string>assets/mossyleaf.png</string>
 						</array>
 					</dict>
 					<dict>
@@ -361,7 +361,7 @@
 						<key>value</key>
 						<array>
 							<string></string>
-							<string>mossyleaf.png</string>
+							<string>assets/mossyleaf.png</string>
 						</array>
 					</dict>
 					<dict>

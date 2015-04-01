@@ -11,10 +11,12 @@
 @implementation Scroll{
     CCLabelTTF *scoreLabel;
     CCLabelTTF *highscoreLabel;
+    bool clickedTryAgain;
 }
 
 -(void)didLoadFromCCB{
     //PUT IN THE NSUSERDEFAULTS AND THE HIGHSCORE
+    clickedTryAgain = false;
 }
 
 -(void)setScoreLabel:(int)score{
@@ -26,9 +28,12 @@
 }
 
 -(void)tryagain{
-    if (self.tryAgainButton.enabled != false || self.scale != 0) {
-        _tryAgainButton.enabled = false;
-        [[NSNotificationCenter defaultCenter] postNotificationName:@"TryAgain" object:nil userInfo:nil];
+    if (clickedTryAgain == false) {
+        clickedTryAgain = true;
+        if (self.tryAgainButton.enabled != false || self.scale != 0) {
+            _tryAgainButton.enabled = false;
+            [[NSNotificationCenter defaultCenter] postNotificationName:@"TryAgain" object:nil userInfo:nil];
+        }
     }
 }
 
