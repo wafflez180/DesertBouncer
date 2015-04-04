@@ -126,7 +126,7 @@
 								<key>type</key>
 								<string>FontTTF</string>
 								<key>value</key>
-								<string>fonts/helsinki.ttf</string>
+								<string>fonts/TradeWinds-Regular.ttf</string>
 							</dict>
 							<dict>
 								<key>name</key>
@@ -1069,7 +1069,7 @@
 										<key>type</key>
 										<string>FontTTF</string>
 										<key>value</key>
-										<string>fonts/CarterOne.ttf</string>
+										<string>fonts/helsinki.ttf</string>
 									</dict>
 									<dict>
 										<key>name</key>
@@ -1223,7 +1223,7 @@
 								<key>value</key>
 								<array>
 									<real>0.5</real>
-									<real>0.17499999701976776</real>
+									<real>0.15000000596046448</real>
 									<integer>0</integer>
 									<integer>2</integer>
 									<integer>2</integer>
@@ -1247,8 +1247,8 @@
 								<string>ScaleLock</string>
 								<key>value</key>
 								<array>
-									<real>0.60000002384185791</real>
-									<real>0.60000002384185791</real>
+									<real>0.44999998807907104</real>
+									<real>0.44999998807907104</real>
 									<true/>
 									<integer>0</integer>
 								</array>
@@ -1743,7 +1743,7 @@
 										<key>type</key>
 										<string>FontTTF</string>
 										<key>value</key>
-										<string>fonts/CarterOne.ttf</string>
+										<string>fonts/helsinki.ttf</string>
 									</dict>
 									<dict>
 										<key>name</key>
@@ -1921,8 +1921,8 @@
 								<string>ScaleLock</string>
 								<key>value</key>
 								<array>
-									<real>0.5</real>
-									<real>0.5</real>
+									<real>0.60000002384185791</real>
+									<real>0.60000002384185791</real>
 									<true/>
 									<integer>0</integer>
 								</array>
@@ -2515,7 +2515,7 @@
 										<string>Text</string>
 										<key>value</key>
 										<array>
-											<string>WATCH AD for 5</string>
+											<string>WATCH AD for 50</string>
 											<false/>
 										</array>
 									</dict>
@@ -2525,7 +2525,7 @@
 										<key>type</key>
 										<string>FontTTF</string>
 										<key>value</key>
-										<string>fonts/CarterOne.ttf</string>
+										<string>fonts/helsinki.ttf</string>
 									</dict>
 									<dict>
 										<key>name</key>
@@ -2679,7 +2679,7 @@
 								<key>value</key>
 								<array>
 									<real>0.5</real>
-									<real>0.40000000596046448</real>
+									<real>0.42500001192092896</real>
 									<integer>0</integer>
 									<integer>2</integer>
 									<integer>2</integer>
@@ -2703,8 +2703,8 @@
 								<string>ScaleLock</string>
 								<key>value</key>
 								<array>
-									<real>0.5</real>
-									<real>0.5</real>
+									<real>0.60000002384185791</real>
+									<real>0.60000002384185791</real>
 									<true/>
 									<integer>0</integer>
 								</array>
@@ -3297,7 +3297,7 @@
 										<string>Text</string>
 										<key>value</key>
 										<array>
-											<string>$20 = 6,000</string>
+											<string>$20 for 6,000</string>
 											<false/>
 										</array>
 									</dict>
@@ -3307,7 +3307,7 @@
 										<key>type</key>
 										<string>FontTTF</string>
 										<key>value</key>
-										<string>fonts/CarterOne.ttf</string>
+										<string>fonts/helsinki.ttf</string>
 									</dict>
 									<dict>
 										<key>name</key>
@@ -3461,7 +3461,7 @@
 								<key>value</key>
 								<array>
 									<real>0.5</real>
-									<real>0.5</real>
+									<real>0.55000001192092896</real>
 									<integer>0</integer>
 									<integer>2</integer>
 									<integer>2</integer>
@@ -3485,8 +3485,8 @@
 								<string>ScaleLock</string>
 								<key>value</key>
 								<array>
-									<real>0.5</real>
-									<real>0.5</real>
+									<real>0.40000000596046448</real>
+									<real>0.40000000596046448</real>
 									<true/>
 									<integer>0</integer>
 								</array>
@@ -4079,7 +4079,7 @@
 										<string>Text</string>
 										<key>value</key>
 										<array>
-											<string>$5 = 1,500</string>
+											<string>$5 for 1,500</string>
 											<false/>
 										</array>
 									</dict>
@@ -4243,7 +4243,7 @@
 								<key>value</key>
 								<array>
 									<real>0.5</real>
-									<real>0.60000002384185791</real>
+									<real>0.625</real>
 									<integer>0</integer>
 									<integer>2</integer>
 									<integer>2</integer>
@@ -4267,8 +4267,8 @@
 								<string>ScaleLock</string>
 								<key>value</key>
 								<array>
-									<real>0.5</real>
-									<real>0.5</real>
+									<real>0.40000000596046448</real>
+									<real>0.40000000596046448</real>
 									<true/>
 									<integer>0</integer>
 								</array>
@@ -4861,7 +4861,7 @@
 										<string>Text</string>
 										<key>value</key>
 										<array>
-											<string>$1 = 250</string>
+											<string>$1 for 250</string>
 											<false/>
 										</array>
 									</dict>
@@ -5049,8 +5049,8 @@
 								<string>ScaleLock</string>
 								<key>value</key>
 								<array>
-									<real>0.5</real>
-									<real>0.5</real>
+									<real>0.40000000596046448</real>
+									<real>0.40000000596046448</real>
 									<true/>
 									<integer>0</integer>
 								</array>
@@ -5201,8 +5201,6 @@
 						<array/>
 					</dict>
 				</array>
-				<key>selected</key>
-				<true/>
 			</dict>
 			<dict>
 				<key>UUID</key>

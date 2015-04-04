@@ -34,6 +34,7 @@
     CCLabelTTF *tutorialReadyLabel;
     CCLabelTTF *optionLabelButton;
     CCLabelTTF *leaderboardLabelButton;
+    CCLabelTTF *overallGameTimer;
     thePump *pumpBottom;
     thePump *pumpTop;
     bool ballOnBottomPump;
@@ -148,6 +149,7 @@
     speed = 1.5;
     spaceLength = 0;
     cobblestoneLength = 0;
+    overallGameTimer.string = @"0";
     spawnBarRate = 0.06;
     canSpawnSpace = false;
     currentCoinsInGame = [[MGWU objectForKey:@"coins"] intValue];
@@ -192,6 +194,8 @@
         // access audio object
         OALSimpleAudio *audio = [OALSimpleAudio sharedInstance];
         // play sound effect in a loop
+        [audio stopAllEffects];
+        [audio stopEverything];
         [audio playBg:@"mainmenumusic.mp3" loop:YES];
     }else{
         // access audio object
@@ -294,6 +298,7 @@
     BeginGameButton.enabled = false;
     BeginGameButton.visible = false;
     
+    overallGameTimer.string = @"0";
     bool boolTutorial =[[MGWU objectForKey:@"tutorial"] boolValue];
     if (boolTutorial) {
         [self startTutorial];
@@ -358,6 +363,8 @@
             // access audio object
             OALSimpleAudio *audio = [OALSimpleAudio sharedInstance];
             // play sound effect in a loop
+            [audio stopAllEffects];
+            [audio stopEverything];
             [audio playBg:@"gamemusic.mp3" loop:YES];
         }else{
             // access audio object
@@ -404,6 +411,8 @@
     if (gameTime > highscore) {
         [MGWU setObject:[NSNumber numberWithInt:gameTime] forKey:@"highscore"];
         [[ABGameKitHelper sharedHelper] reportScore:gameTime forLeaderboard:@"com.DesertBouncer.leaderboardID"];
+    }else{
+        [[ABGameKitHelper sharedHelper] reportScore:highscore forLeaderboard:@"com.DesertBouncer.leaderboardID"];
     }
     [MGWU setObject:[NSNumber numberWithInt:currentCoinsInGame] forKey:@"coins"];
     [loseScroll setScoreLabel:gameTime];
@@ -415,6 +424,8 @@
         // access audio object
         OALSimpleAudio *audio = [OALSimpleAudio sharedInstance];
         // play sound effect in a loop
+        [audio stopAllEffects];
+        [audio stopEverything];
         [audio playBg:@"mainmenumusic.mp3" loop:YES];
     }else{
         // access audio object
@@ -479,6 +490,8 @@
             // access audio object
             OALSimpleAudio *audio = [OALSimpleAudio sharedInstance];
             // play sound effect in a loop
+            [audio stopAllEffects];
+            [audio stopEverything];
             [audio playBg:@"gamemusic.mp3" loop:YES];
         }else{
             // access audio object
@@ -537,6 +550,7 @@
     if (timing) {
         float currentTime = overallTimer;
         float gameOverallTime = currentTime - gameStartTime;
+        overallGameTimer.string = [NSString stringWithFormat:@"%i",[self getGameTime]];
         if (gameOverallTime < 8) {
             speed = 1.2;
             if (coinValueUpgradedSlots < 4) {
