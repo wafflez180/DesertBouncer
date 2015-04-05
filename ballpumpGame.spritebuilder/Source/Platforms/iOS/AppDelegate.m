@@ -29,7 +29,6 @@
 #import "CCBuilderReader.h"
 #import <Crashlytics/Crashlytics.h>
 #import <FacebookSDK/FacebookSDK.h>
-#import "ALSdk.h"
 
 @implementation AppController
 
@@ -65,9 +64,7 @@
     //[cocos2dSetup setObject:kEAGLColorFormatRGB565 forKey:CCConfigPixelFormat];
     
     [self setupCocos2dWithOptions:cocos2dSetup];
-    
-    [ALSdk initializeSdk];
-    
+        
     [Crashlytics startWithAPIKey:@"b3f968f6cdf4372d174aad54e4647514c1888e83"];
     
     return YES;

@@ -17,11 +17,15 @@
 -(void)didLoadFromCCB{
     //PUT IN THE NSUSERDEFAULTS AND THE HIGHSCORE
     clickedTryAgain = false;
+    _tryAgainButton.enabled = true;
 }
 
 -(void)setScoreLabel:(int)score{
     int highscore = [[MGWU objectForKey:@"highscore"] intValue];
-
+    
+    clickedTryAgain = false;
+    _tryAgainButton.enabled = true;
+    
     NSString *scoreString = [NSString stringWithFormat:@"%d%@", score, @"s"];
     scoreLabel.string = scoreString;
     highscoreLabel.string = [NSString stringWithFormat:@"%d%@", highscore, @"s"];

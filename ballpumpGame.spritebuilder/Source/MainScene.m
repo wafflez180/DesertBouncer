@@ -3,13 +3,10 @@
 #import "cobblestone.h"
 #import "Scroll.h"
 #import "coin.h"
-#import "ALInterstitialAd.h"
-#import "ALAdDisplayDelegate.h"
-#import "ALInterstitialAd.h"
-#import "ALAdService.h"
 #import "ABGameKitHelper.h"
 #import <Social/Social.h>
 #import <Twitter/Twitter.h>
+#import <GoogleMobileAds/GADInterstitial.h>
 
 @implementation MainScene{
     CCSprite *ball;
@@ -127,8 +124,6 @@
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(startNewGame:) name:@"TryAgain" object:nil];
     // Optional: Assign delegates.
-    [ALInterstitialAd shared].adLoadDelegate = self;
-    [ALInterstitialAd shared].adDisplayDelegate = self;
     colorOne.visible = false;
     colorTwo.visible = false;
     colorThree.visible = false;
@@ -204,6 +199,12 @@
         [audio stopAllEffects];
         [audio stopEverything];
     }
+    self.interstitial = [[GADInterstitial alloc] init];
+    self.interstitial.adUnitID = @"ca-app-pub-2396206924319009/1670187174";
+    
+    GADRequest *request = [GADRequest request];
+    [self.interstitial loadRequest:request];
+    
     [ABGameKitHelper sharedHelper];
     [darknessColorNode stopAllActions];
     [background stopAllActions];
@@ -365,7 +366,8 @@
             // play sound effect in a loop
             [audio stopAllEffects];
             [audio stopEverything];
-            [audio playBg:@"gamemusic.mp3" loop:YES];
+            [audio playBg:@"gamemusic.wav" loop:YES];
+            
         }else{
             // access audio object
             OALSimpleAudio *audio = [OALSimpleAudio sharedInstance];
@@ -373,6 +375,10 @@
             [audio stopAllEffects];
             [audio stopEverything];
         }
+        self.interstitial = [[GADInterstitial alloc] init];
+        self.interstitial.adUnitID = @"ca-app-pub-2396206924319009/1670187174";
+        GADRequest *request = [GADRequest request];
+        [self.interstitial loadRequest:request];
     }
 }
 
@@ -438,14 +444,11 @@
     timerLabel.string = [NSString stringWithFormat:@"%d", (int)timer];
     int randomChanceAD = arc4random_uniform(4);
     bool removedAds = [[MGWU objectForKey:@"RemovedAds"] boolValue];
-    
-    if([ALInterstitialAd shared].isReadyForDisplay && randomChanceAD == 1 && removedAds == NO && !timing){
-        
-        [ALInterstitialAd show];
-    }
-    else{
+    if([self.interstitial isReady] && randomChanceAD == 1 && removedAds == NO && !timing){
+        [self.interstitial presentFromRootViewController:[CCDirector sharedDirector]];
+    }else{
         if (randomChanceAD != 1) {
-            NSLog(@"Random chance did not display");
+            NSLog(@"Random chance did not display (%i)",randomChanceAD);
         }else if(removedAds){
             NSLog(@"Player has removed ads");
         }else{
@@ -492,7 +495,7 @@
             // play sound effect in a loop
             [audio stopAllEffects];
             [audio stopEverything];
-            [audio playBg:@"gamemusic.mp3" loop:YES];
+            [audio playBg:@"gamemusic.wav" loop:YES];
         }else{
             // access audio object
             OALSimpleAudio *audio = [OALSimpleAudio sharedInstance];
@@ -1115,33 +1118,6 @@
 
 -(void)removeTap{
     singletapHand.visible = false;
-}
-
-#pragma mark AppLovin delegate implementation (Optional)
-
--(void) adService:(ALAdService *)adService didLoadAd:(ALAd *)ad
-{
-    NSLog(@"Interstitial loaded.");
-}
-
--(void) adService:(ALAdService *)adService didFailToLoadAdWithError:(int)code
-{
-    NSLog(@"Interstitial failed to load.");
-}
-
--(void) ad:(ALAd *)ad wasDisplayedIn:(UIView *)view
-{
-    NSLog(@"Interstitial displayed.");
-}
-
--(void) ad:(ALAd *)ad wasClickedIn:(UIView *)view
-{
-    NSLog(@"Interstitial clicked.");
-}
-
--(void) ad:(ALAd *)ad wasHiddenIn:(UIView *)view
-{
-    NSLog(@"Interstitial hidden.");
 }
 
 @end

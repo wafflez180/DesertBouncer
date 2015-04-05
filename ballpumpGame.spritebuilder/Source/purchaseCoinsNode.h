@@ -7,12 +7,7 @@
 //
 
 #import "CCNode.h"
-#import "ALIncentivizedInterstitialAd.h"
-#import "ALAdRewardDelegate.h"
-#import "ALAdLoadDelegate.h"
 
-@interface purchaseCoinsNode : CCNode <ALAdLoadDelegate, ALAdRewardDelegate, ALAdDisplayDelegate>
-
-@property (assign, atomic, getter=isVideoAvailable) BOOL videoAvailable;
+@interface purchaseCoinsNode : CCNode
 
 @end
